@@ -47,7 +47,7 @@ const Collection = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://eth-rinkeby.alchemyapi.io/v2/J76xcsGpR2mj3-cvL3DbLbtSp5nB24P3'
     )
     return sdk.getNFTModule(collectionId)
   }, [provider])
@@ -67,10 +67,10 @@ const Collection = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://eth-rinkeby.alchemyapi.io/v2/J76xcsGpR2mj3-cvL3DbLbtSp5nB24P3'
     )
     return sdk.getMarketplaceModule(
-      '0x93A771F7ce845C33381f677489cF21a5964EDD0b'
+      '0x3F3a4D1A692c6a589CFd8fABFd69d04FD3c6f86B'
     )
   }, [provider])
 
